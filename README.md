@@ -5,7 +5,10 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This browser based web application to help users to check a restaurant status, promotions, protocol is applied, make a take out order, and make reservation.
+
+Thuy - checkstatus.html
+
 	
 ## Technologies
 Technologies used for this project:
