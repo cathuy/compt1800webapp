@@ -8,6 +8,7 @@
 This browser based web application to help users to check a restaurant status, promotions, protocol is applied, make a take out order, and make reservation.
 
 Thuy - checkstatus.html
+Long - index.html
 
 	
 ## Technologies
@@ -23,7 +24,7 @@ Content of the project folder:
 ```
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
-├── index.html               # landing HTML file, this is what users see when you come to url
+├── index.html               # the main screen. What user see when they get on the website
 └── README.md
 
 It has the following subfolders and files:
