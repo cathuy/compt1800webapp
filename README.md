@@ -9,7 +9,7 @@ This browser based web application to help users to check a restaurant status, p
 
 Thuy - checkstatus.html
 Long - index.html
-
+Chris - profile.html
 	
 ## Technologies
 Technologies used for this project:
