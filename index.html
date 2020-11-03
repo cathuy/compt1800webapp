@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>My BCIT Project</title>
+    <title>Food Lovers</title>
     <meta name="comp1800 boilerplate code" content="my bcit project">
     <meta name="author" content="BCIT">
 
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Optional styles and scripts of your own -->
-
+    <link rel="stylesheet" href="styles/index_style.css">
 
 </head>
 
@@ -22,25 +22,17 @@
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
     <!-- Header Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="">FoodLover</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">my data</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">my profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">login/signup</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <a href="login.html">login/signup</a>
+    </header>
+    <form id = "findForm" action = "listRestaurant.html" method = "get">
+        <input class="form-control" id = "address" type="text" placeholder="Enter your address">
+        <img src="images/Location-Icon.png" alt="location icon">
+        <button type="submit" class="btn btn-primary mb-2" id = "findRestaurant">Find the restaurant near by</button>
+    </form>
+
+
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->

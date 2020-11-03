@@ -1,0 +1,29 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: cornflowerblue;
+}
+header a{
+    color: white;
+}
+#findForm{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+#findForm img{
+    width: 30px;
+    float: right;
+    margin-top: -33px;
+}
+#findRestaurant{
+    margin-top: 30px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
