@@ -3,10 +3,9 @@
     display: grid;
     grid-template-columns: 30vw 40vw 30vw;
 }
-#btnRestaurant a{
+
+#btnRestaurant button{
     grid-column: 2;
-}
-#btnRestaurant a button{
     width: 40vw;
     margin-bottom: 30px;
     background-color: cornflowerblue;
