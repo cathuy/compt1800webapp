@@ -1,0 +1,23 @@
+
+#content{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    width: 70%;
+}
+
+#name h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#info p, #info ul{
+    padding-left: 5%;
+}
+#info ul li{
+    list-style-type: none;
+    padding-top: 5px;
+    padding-left: 5%;
+}
