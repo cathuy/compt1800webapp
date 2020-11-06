@@ -1,0 +1,13 @@
+#btnRestaurant{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+}
+#btnRestaurant a{
+    grid-column: 2;
+}
+#btnRestaurant a button{
+    width: 40vw;
+    margin-bottom: 30px;
+    background-color: cornflowerblue;
+}
