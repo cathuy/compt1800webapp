@@ -1,0 +1,19 @@
+#bottomBtn{
+    visibility: hidden;
+}
+@media only screen and (max-width: 650px) {
+    #bottomBtn{
+        position: fixed;
+        bottom: 0;
+        visibility: visible;
+        display: flex;
+    }
+    #bottomBtn button img{
+        width: 30px;
+        clear: both;
+        align-content: center;
+    }
+    #bottomBtn button{
+        text-align: center;
+    }
+}

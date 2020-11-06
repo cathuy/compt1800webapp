@@ -13,7 +13,7 @@
     margin-bottom: 5%;
 }
 
-#info p, #info ul{
+#info p, #info ul, #info b{
     padding-left: 5%;
 }
 #info ul li{

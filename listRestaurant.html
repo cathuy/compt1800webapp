@@ -13,7 +13,7 @@
 
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
-
+    <link rel="stylesheet" href="styles/mobilestyle.css">
 </head>
 
 <body>
@@ -42,8 +42,23 @@
             </ul>
         </div>
     </header>
-    
+    <div id="content"></div>
 
+
+    <div id="bottomBtn">
+        <button type="button" class="btn" onclick = "window.location.href='restaurantPage.html'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back"/>
+            Back</button>
+        <button type="button" class="btn"  onclick = "window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home"/>
+            Home</button>
+        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history"/>
+            Orders</button>
+        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account"/>
+            Account</button>
+    </div>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->

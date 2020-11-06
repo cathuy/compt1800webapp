@@ -14,6 +14,7 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="stylesheet" href="styles/status.css">
+    <link rel="stylesheet" href="styles/mobilestyle.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">login/signup</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
                 </li>
@@ -47,25 +48,43 @@
             <h2>Restaurant 1</h2>
         </div>
         <div id="info">
+            <b>Status</b>
             <ul id="status">
-                <b>Status</b>
+                
                 <li>Maximum customer: <span id="maxPeople">50</span></li>
                 <li>Number of customer: <span>20</span></li>
                 <li>Estimate time for take out: <span>30 </span> mins</li>
             </ul>
+            <b>Promotion: </b>
             <ul id="promotions">
-                <b>Promotion: </b>
+                
                 <li>Promotion 1</li>
                 <li>Promotion 2</li>
                 <li>Promotion 3</li>
             </ul>
+            <b>Protocol during Covid:</b>
             <ul id="protocol">
-                <b>Protocol during Covid:</b>
+                
                 <li>Protocol 1</li>
                 <li>Protocol 2</li>
             </ul>
             <p>Last update: <span id="esetimateTime">1 hours a go</span></p>
         </div>
+        
+    </div>
+    <div id="bottomBtn">
+        <button type="button" class="btn" onclick = "window.location.href='restaurantPage.html'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back"/>
+            Back</button>
+        <button type="button" class="btn"  onclick = "window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home"/>
+            Home</button>
+        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history"/>
+            Orders</button>
+        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account"/>
+            Account</button>
     </div>
 
 
@@ -75,17 +94,18 @@
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
 
 </body>
+
 </html>
