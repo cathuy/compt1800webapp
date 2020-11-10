@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Food Lovers</title>
-    <meta name="comp1800 boilerplate code" content="my bcit project">
-    <meta name="author" content="BCIT">
 
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +12,11 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
+    <link rel="stylesheet" href="styles/restaurantList.css">
 </head>
 
 <body>
-    
+
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
@@ -35,7 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">login/signup</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
                 </li>
@@ -44,19 +43,51 @@
     </header>
     <div id="content"></div>
 
+    <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-15">
+        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+    </form>
+
+    <div class="list-group mt-15 list">
+        <a href="restaurantPage.html" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Restaurant 1</h5>
+                <small>15%-off today</small>
+            </div>
+            <p class="mb-1">4233 Kingsway</p>
+            <small>Vietnamese</small>
+        </a>
+        <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Restaurant 2</h5>
+                <small class="text-muted">Free shipping</small>
+            </div>
+            <p class="mb-1">1097 Kingsway</p>
+            <small class="text-muted">Chinese</small>
+        </a>
+        <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Restaurant 3</h5>
+                <small class="text-muted">20%-off</small>
+            </div>
+            <p class="mb-1">901 W Broadway</p>
+            <small class="text-muted">Indian</small>
+        </a>
+    </div>
+
 
     <div id="bottomBtn">
-        <button type="button" class="btn" onclick = "window.location.href='restaurantPage.html'" value="link">
-            <img src="images/Left_Arrow_-512.png" alt="go back"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back" />
             Back</button>
-        <button type="button" class="btn"  onclick = "window.location.href='index.html'" value="link">
-            <img src="images/home1600.png" alt="home"/>
+        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home" />
             Home</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/ordonance-512.png" alt="order history"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history" />
             Orders</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/Person-Logo-1.png" alt="Account"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
     </div>
 
@@ -78,4 +109,5 @@
     <!--------------------------------------------------------------------->
 
 </body>
+
 </html>
