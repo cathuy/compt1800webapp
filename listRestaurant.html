@@ -51,7 +51,7 @@
     <div class="list-group mt-15 list">
         <a href="restaurantPage.html" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">Restaurant 1</h5>
+                <h5 class="mb-1:" id="res1"></h5>
                 <small>15%-off today</small>
             </div>
             <p class="mb-1">4233 Kingsway</p>
@@ -74,7 +74,6 @@
             <small class="text-muted">Indian</small>
         </a>
     </div>
-
 
     <div id="bottomBtn">
         <button type="button" class="btn" onclick="window.location.href='#'" value="link">
@@ -104,9 +103,17 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
-    <!--------------------------------------------------------------------->
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
+
     <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
+    <script src="scripts/listRestaurant.js"> </script>
 
 </body>
 
