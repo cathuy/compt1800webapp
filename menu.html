@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Food Lovers</title>
-    <meta name="comp1800 boilerplate code" content="my bcit project">
-    <meta name="author" content="BCIT">
 
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,9 +11,9 @@
 
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
-    <link rel="stylesheet" href="styles/restaurant.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
-
+    <link rel="stylesheet" href="styles/restaurantList.css">
+    <link rel="stylesheet" href="styles/menu.css">
 </head>
 
 <body>
@@ -44,49 +42,55 @@
             </ul>
         </div>
     </header>
-    <div id="name">
-            <h2>Restaurant 1</h2>
-        </div>
-    <div id = "btnRestaurant">
-        <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='checkstatus.html'" value = "link">Check status</button>
-        <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='menu.html'" value = "link">Menu</button>
-        <button type="button" class="btn btn-primary btn-lg " onclick="window.location.href='#'" value = "link">Order take out</button>
-        <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='#'" value = "link">Make Reservation</button>
-        
-    </div>
 
+    <div class="text-center"><img src="https://i.ytimg.com/vi/yCtzW-Y-E5Q/maxresdefault.jpg" class="img-fluid image" alt="Responsive image"></div>
+
+    <div class="list-group list-group-horizontal justify-content-between rounded-pill featurelist">
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Drink</a>
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Beverage</a>
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Top 10</a>
+      </div>
 
 
     <div id="bottomBtn">
-        <button type="button" class="btn" onclick = "window.location.href='listRestaurant.html'" value="link">
-            <img src="images/Left_Arrow_-512.png" alt="go back"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back" />
             Back</button>
-        <button type="button" class="btn"  onclick = "window.location.href='index.html'" value="link">
-            <img src="images/home1600.png" alt="home"/>
+        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home" />
             Home</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/ordonance-512.png" alt="order history"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history" />
             Orders</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/Person-Logo-1.png" alt="Account"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
     </div>
+
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    </script>
 
-    <!--------------------------------------------------------------------->
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
+
     <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
+    <script src="scripts/listRestaurant.js"> </script>
 
 </body>
 

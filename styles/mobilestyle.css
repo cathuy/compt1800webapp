@@ -1,5 +1,5 @@
 #bottomBtn{
-    visibility: hidden;
+    display: none;
 }
 @media only screen and (max-width: 650px) {
     #bottomBtn{
