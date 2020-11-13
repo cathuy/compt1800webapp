@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Food Lovers</title>
-    <meta name="comp1800 boilerplate code" content="my bcit project">
-    <meta name="author" content="BCIT">
 
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,6 +13,7 @@
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
     <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/restaurantList.css">
 </head>
 
 <body>
@@ -95,24 +94,36 @@
                 </div>
             </div>
         </div>
-        <div id="restaurants" class="verticalCenter">
-            <div class="restaurant">
-                <a href="restaurantPage.html">
-                    <img class="restaurantImage card-img-top" src="images/sushi_PNG9225.png" alt="restaurant">
-                    <div class="restaurantInfo card-body">
-                        <p class="restaurantName">Restaurant 1</p>
-                        <span class="reviews"><img src="images/Icon_Star.png" alt="star" />4.5</span>
-                        <span class="cuisine">| Chinese |</span>
-                        <span class="estimateTime">40m</span>
-                    </div>
-                </a>
-            </div>
-           
+
+        <div class="list-group mt-15 list">
+            <a href="restaurantPage.html" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1:" id="res1"></h5>
+                    <small>15%-off today</small>
+                </div>
+                <p class="mb-1">4233 Kingsway</p>
+                <small>Vietnamese</small>
+            </a>
+            <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Restaurant 2</h5>
+                    <small class="text-muted">Free shipping</small>
+                </div>
+                <p class="mb-1">1097 Kingsway</p>
+                <small class="text-muted">Chinese</small>
+            </a>
+            <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Restaurant 3</h5>
+                    <small class="text-muted">20%-off</small>
+                </div>
+                <p class="mb-1">901 W Broadway</p>
+                <small class="text-muted">Indian</small>
+            </a>
         </div>
     </div>
-
     <div id="bottomBtn">
-        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/Left_Arrow_-512.png" alt="go back" />
             Back</button>
         <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
@@ -139,9 +150,17 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
-    <!--------------------------------------------------------------------->
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
+
     <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
+    <script src="scripts/listRestaurant.js"> </script>
 
 </body>
 

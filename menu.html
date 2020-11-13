@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Food Lovers</title>
+
+    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Optional styles and scripts of your own -->
+    <link rel="stylesheet" href="styles/index_style.css">
+    <link rel="stylesheet" href="styles/mobilestyle.css">
+    <link rel="stylesheet" href="styles/restaurantList.css">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+
+<body>
+
+    <!-------------------------------------->
+    <!-- The following is HTML for layout -->
+    <!-------------------------------------->
+    <!-- Header Navigation Bar -->
+    <header class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">FoodLover</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">my profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">login/signup</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="text-center"><img src="https://i.ytimg.com/vi/yCtzW-Y-E5Q/maxresdefault.jpg" class="img-fluid image" alt="Responsive image"></div>
+
+    <div class="list-group list-group-horizontal justify-content-between rounded-pill featurelist">
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Drink</a>
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Beverage</a>
+        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Top 10</a>
+      </div>
+
+
+    <div id="bottomBtn">
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back" />
+            Back</button>
+        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home" />
+            Home</button>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history" />
+            Orders</button>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account" />
+            Account</button>
+    </div>
+
+    <!----------------------------------------------->
+    <!-- JS: Boostrap, Firebase, API related    -->
+    <!----------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
+
+    <!-- JS files: Your own JavaScript functions included here    -->
+    <script src="scripts/listRestaurant.js"> </script>
+
+</body>
+
+</html>

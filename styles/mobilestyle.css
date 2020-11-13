@@ -1,5 +1,5 @@
 #bottomBtn{
-    visibility: hidden;
+    display: none;
 }
 #content{
     width: 84vw;
