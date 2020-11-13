@@ -7,13 +7,8 @@
 ## General Info
 This browser based web application to help users to check a restaurant status, promotions, protocol is applied, make a take out order, and make reservation.
 
-<<<<<<< HEAD
-Thuy - checkstatus.html
-Long - index.html
-=======
 * Thuy - index.html
 * Long - listRestaurant.html
->>>>>>> ad4466bfd84cc4fb592c762cea22e972ff98ce4b
 	
 ## Technologies
 Technologies used for this project:

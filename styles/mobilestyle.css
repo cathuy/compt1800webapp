@@ -1,19 +1,42 @@
 #bottomBtn{
     visibility: hidden;
 }
+#content{
+    width: 84vw;
+    position: relative;
+}
+.verticalCenter{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.bigger_screen{
+    display: block;
+}
+.card{
+    width: 12vw;
+}
 @media only screen and (max-width: 650px) {
     #bottomBtn{
         position: fixed;
         bottom: 0;
         visibility: visible;
         display: flex;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #bottomBtn button img{
-        width: 30px;
+        width: 25px;
         clear: both;
         align-content: center;
     }
-    #bottomBtn button{
-        text-align: center;
+    #content{
+        width: 100%;
+    }
+    .card{
+        width:25vw;
+    }
+    .bigger_screen{
+        display: none;
     }
 }

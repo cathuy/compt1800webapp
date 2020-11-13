@@ -1,0 +1,50 @@
+
+#search {
+    width: 40%;
+    top: 0;
+    margin-top: 10px;
+}
+#searchinfo{
+    position: absolute;
+    float: left;
+}
+#searchRestaurants img{
+    width: 25px;
+    height: 25px;
+}
+#searchform button{
+    float: right;
+    position: relative;
+}
+#foodCusine{
+    margin-top: 3%;
+    display: flex;
+    
+}
+.card-body{
+    padding-left:3px;
+    padding-right: 3px;
+    text-align: center;
+}
+
+.restaurantImage{
+    width: 26vw;
+}
+.reviews img{
+    width: 20px;
+    float: left;
+}
+.restaurant{
+    width: 25vw;
+    float: left;
+}
+#restaurant{
+    width: 84vw;
+    display: flex;
+}
+.restaurantName{
+    font-size: 14pt;
+    float: none;
+    clear: both;
+}
+

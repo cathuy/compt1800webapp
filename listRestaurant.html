@@ -14,10 +14,11 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
+    <link rel="stylesheet" href="styles/list.css">
 </head>
 
 <body>
-    
+
     <!-------------------------------------->
     <!-- The following is HTML for layout -->
     <!-------------------------------------->
@@ -35,28 +36,93 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">login/signup</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
                 </li>
             </ul>
         </div>
     </header>
-    <div id="content"></div>
-
+    <div id="search" class="verticalCenter">
+        <form id="searchform" action="listRestaurant.html" method="get">
+            <input class="form-control" id="searchinfo" type="text" placeholder="Search">
+            <button type="submit" class="btn mb-2" id="searchRestaurants"><img src="images/search-icon.png"
+                    alt="search icon"></button>
+        </form>
+    </div>
+    <div id="content" class="verticalCenter">
+        <div id="foodCusine" class="verticalCenter">
+            <div class="card">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Chinese</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Italian</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Vietnamese</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Korean</p>
+                </div>
+            </div>
+            <div class="card bigger_screen">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Thailand</p>
+                </div>
+            </div>
+            <div class="card bigger_screen">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Janpanese</p>
+                </div>
+            </div>
+            <div class="card bigger_screen">
+                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Taiwanese</p>
+                </div>
+            </div>
+        </div>
+        <div id="restaurants" class="verticalCenter">
+            <div class="restaurant">
+                <a href="restaurantPage.html">
+                    <img class="restaurantImage card-img-top" src="images/sushi_PNG9225.png" alt="restaurant">
+                    <div class="restaurantInfo card-body">
+                        <p class="restaurantName">Restaurant 1</p>
+                        <span class="reviews"><img src="images/Icon_Star.png" alt="star" />4.5</span>
+                        <span class="cuisine">| Chinese |</span>
+                        <span class="estimateTime">40m</span>
+                    </div>
+                </a>
+            </div>
+           
+        </div>
+    </div>
 
     <div id="bottomBtn">
-        <button type="button" class="btn" onclick = "window.location.href='restaurantPage.html'" value="link">
-            <img src="images/Left_Arrow_-512.png" alt="go back"/>
+        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+            <img src="images/Left_Arrow_-512.png" alt="go back" />
             Back</button>
-        <button type="button" class="btn"  onclick = "window.location.href='index.html'" value="link">
-            <img src="images/home1600.png" alt="home"/>
+        <button type="button" class="btn" onclick="window.location.href='index.html'" value="link">
+            <img src="images/home1600.png" alt="home" />
             Home</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/ordonance-512.png" alt="order history"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/ordonance-512.png" alt="order history" />
             Orders</button>
-        <button type="button" class="btn"  onclick = "window.location.href='#'" value="link">
-            <img src="images/Person-Logo-1.png" alt="Account"/>
+        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+            <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
     </div>
 
@@ -65,17 +131,18 @@
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
 
 </body>
+
 </html>
