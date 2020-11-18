@@ -5,7 +5,7 @@ body{
     height: 100vh;
 }
 header{
-    background-color: cornflowerblue;
+    background-color: #d9534f;
 }
 header a{
     color: white;
@@ -33,4 +33,11 @@ header a{
     background-image: url(../images/menu-Icon.png);
     background-size: 35px 35px;
     background-repeat: no-repeat;
+}
+
+.btn-primary{
+    background-color: #d9534f;
+}
+.btn:hover{
+    background-color: #5bc0de;
 }
