@@ -6,6 +6,7 @@ function status() {
         db.collection("restaurant").doc(restaurantID).onSnapshot(function (q) {
             $("#name").append("<h2>"+ q.data().name);
         })
+
         var promotionCode;
         document.getElementById("maxPeople").innerText = q.data().maxCustomer;
         document.getElementById("currentPeople").innerText = q.data().currentCustomer;
@@ -24,6 +25,7 @@ function status() {
                 $("#promotions").append("<li>Reservation discount: " + q.data().reservation + "</li>");
             }
         });
+        
         var protocol = q.data().protocol;
         var i;
         for (i = 0; i < protocol.length; i++)
