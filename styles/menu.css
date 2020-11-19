@@ -21,3 +21,14 @@
 .feature {
     width: auto;
 }
+
+.menuImg{
+    width: 80px; 
+    height: 80px;
+    float: right;
+}
+
+.menu{
+    max-width: 70%;
+    float: left;
+}

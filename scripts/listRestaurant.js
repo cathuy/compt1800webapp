@@ -29,4 +29,14 @@ $(document).ready(function res(){
             $("#resAdd3").append(address.streetNumber + " " + address.city);
 
     })
+
+    db.collection("dishes").doc("04")
+        .onSnapshot(function(q){
+            //document.getElementById("res1").innerText = q.data().name;
+            $("#menuName1").append(q.data().name);
+            document.getElementById("menuPri1").innerText = "$" + q.data().price;
+            
+            $("#menuIn1").append(q.data().ingredients);
+
+    })
 })
