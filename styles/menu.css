@@ -32,3 +32,12 @@
     max-width: 70%;
     float: left;
 }
+
+.addIcon{
+    width: 30px;
+    height: 30px;
+    float: right;
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}
