@@ -6,6 +6,7 @@ function status() {
         db.collection("restaurant").doc(restaurantID).onSnapshot(function (q) {
             $("#name").append("<h2>"+ q.data().name);
         })
+     
         var promotionCode;
         document.getElementById("maxPeople").innerText = q.data().maxCustomer;
         document.getElementById("currentPeople").innerText = q.data().currentCustomer;
