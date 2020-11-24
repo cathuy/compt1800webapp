@@ -25,6 +25,7 @@ function status() {
                 $("#promotions").append("<li>Reservation discount: " + q.data().reservation + "</li>");
             }
         });
+        
         var protocol = q.data().protocol;
         var i;
         for (i = 0; i < protocol.length; i++)
