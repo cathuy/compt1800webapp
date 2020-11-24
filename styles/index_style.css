@@ -37,7 +37,10 @@ header a{
 
 .btn-primary{
     background-color: #d9534f;
+    border-color: #d9534f;
 }
+
 .btn:hover{
     background-color: #5bc0de;
+    border-color: #5bc0de;
 }
