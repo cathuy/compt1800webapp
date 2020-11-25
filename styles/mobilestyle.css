@@ -17,7 +17,9 @@
     width: 12vw;
 }
 @media only screen and (max-width: 650px) {
-    
+    *{
+        font-size: 80%;
+    }
     #bottomBtn{
         position: sticky;
         bottom: 0;
@@ -43,12 +45,12 @@
         width: 20vw;
         float: left;
         resize: none;
-        height: 120px;
+        height: 20vw;
         margin-right: 10px;
 
     }
     .restaurant-profile{
-        height: 150px;
+        height: 30vw;
     }
     #list-restaurant{
         width: 100%;
@@ -56,8 +58,11 @@
     }
     #list-restaurant h5{
         padding-right: 2px;
-        width: 38vw;
-        font-size: small;
+        width: 35vw;
+        font-size: 2em;
+    }
+    #list-restaurant p{
+        margin-bottom: 5px;
     }
     .list{
         padding-top: 30vw;
