@@ -4,7 +4,7 @@
     grid-template-columns: 30vw 40vw 30vw;
 }
 
-#btnRestaurant button{
+#btnRestaurant a{
     grid-column: 2;
     width: 40vw;
     margin-bottom: 30px;

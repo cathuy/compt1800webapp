@@ -17,13 +17,15 @@
     width: 12vw;
 }
 @media only screen and (max-width: 650px) {
+    *{
+        font-size: 0.8em;
+    }
     #bottomBtn{
-        position: fixed;
+        position: sticky;
         bottom: 0;
         visibility: visible;
         display: flex;
-        left: 50%;
-        transform: translateX(-50%);
+        background-color: #d9534f;
     }
     #bottomBtn button img{
         width: 25px;
@@ -38,5 +40,19 @@
     }
     .bigger_screen{
         display: none;
+    }
+    .restaurant-profile img{
+        width: 20vw;
+        float: left;
+        resize: both;
+        height: 15vw;
+        margin-right: 10px;
+
+    }
+    #list-restaurant{
+        width: 100%;
+    }
+    .list{
+        padding-top: 30vw;
     }
 }
