@@ -4,7 +4,7 @@ function displaypromotions(promotionid, restaurantid){
         const pickup = q.data().pickup;
         const reservation = q.data().reservation;
         var small = "<small></small>"
-        console.log(delivery, pickup, reservation);
+        //console.log(delivery, pickup, reservation);
         if (delivery > 0) {
             small= "<small>" + q.data().delivery + "% for delivery order";
         } else if (pickup != 0) {
@@ -19,17 +19,18 @@ function listRestaurant() {
     db.collection("restaurant").get().then(function(q){
         var id, address, image, name, cuisine, small;
         q.forEach(function(doc){
-            console.log(doc.id, "=>", doc.data())
+            //console.log(doc.id, "=>", doc.data())
             id = doc.data().id;
             address =  doc.data().Address;
             name = doc.data().name;
             cuisine = doc.data().typeOfCuisine;
             image = doc.data().image;
             promotion = doc.data().promotion.id;
+            console.log(doc.data().promotion.id);
             if(image==""){
                 image = "Restaurant.png";
             }
-            console.log(small);
+            //console.log(small);
             $("#list-restaurant").append(
                 "<a href = 'restaurantPage.html?" + id + "'class = 'list-group-item list-group-item-action flex-column align-items-start restaurant-profile'>"
                     + "<img src = 'images/" + image + "' alt = 'restaurant picture'/>"    

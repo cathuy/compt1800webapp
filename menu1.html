@@ -8,6 +8,7 @@
     <!-- Bootstrap for Mobile-first, and JQuery -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
@@ -43,32 +44,15 @@
         </div>
     </header>
 
-    <div class="text-center"><img src="https://i.ytimg.com/vi/yCtzW-Y-E5Q/maxresdefault.jpg" class="img-fluid image"
-            alt="Responsive image"></div>
-
-    <div class="list-group list-group-horizontal justify-content-between rounded-pill featurelist">
-        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Drink</a>
-        <a href="#" class="list-group-item list-group-item-action rounded-pill feature">Beverage</a>
-        <a href="#top10" class="list-group-item list-group-item-action rounded-pill feature">Top 10</a>
+    <div class="text-center" style="background-color: black;"> 
+        <img src="images/menu.jpg" class="img-fluid img-thumbnail image" alt="Responsive image">
     </div>
 
-    <div class="list-group mt-15 list">
-        <h5 id="top10">Top 10</h4>
-        <a href="" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="justify-content-between menu">
-                <h5 class="mb-1:" id="menuName1"></h5>
-                <p id="menuIn1"></p>
-                <p class="mb-1" id="menuPri1"></p>
-            </div>
-            <div>
-                <img src="images/dish4.PNG" class="img-fluid menuImg" alt="Responsive image">
-                <img src="images/add_icon.png" class="img-fluid addIcon" alt="Responsive image">
-            </div>
-        </a>
+    <div class="list-group menu" id="menu">
     </div>
 
 
-    <div id="bottomBtn">
+    <footer class="navbar fixed-bottom" id="bottomBtn">
         <button type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/Left_Arrow_-512.png" alt="go back" />
             Back</button>
@@ -81,7 +65,7 @@
         <button type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
-    </div>
+    </footer>
 
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
@@ -106,7 +90,7 @@
     <script src="scripts/firebase_api.js"> </script>
 
     <!-- JS files: Your own JavaScript functions included here    -->
-    <script src="scripts/listRestaurant.js"> </script>
+    <script src="scripts/menu.js"> </script>
 
 </body>
 

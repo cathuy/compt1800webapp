@@ -21,7 +21,6 @@
         font-size: 80%;
     }
     #bottomBtn{
-        position: sticky;
         bottom: 0;
         visibility: visible;
         display: flex;

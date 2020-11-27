@@ -3,6 +3,7 @@ function displayRestaurant(){
     var queries = queryString.split("?");   //delimiter
     var id = queries[1];                 //get what's after '?'
     console.log(id);
+    
     db.collection("restaurant").doc(id).onSnapshot(function(q){
         $("#name").append("<h2>"+ q.data().name);
     })
