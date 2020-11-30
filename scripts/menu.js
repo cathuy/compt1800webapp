@@ -10,6 +10,7 @@ $(document).ready(function menu() {
 
             restaurantID = doc.data().restaurantID.id;
             foodID = doc.data().id;
+            console.log(foodID);
 
             if (restaurantID == id) {
                 db.collection("dishes").doc(foodID).onSnapshot(function (q) {
@@ -27,13 +28,35 @@ $(document).ready(function menu() {
                         "<h6 class='mb-1'>$" + price + "</h6>" +
                         "</div>" +
                         "<div>" +
-                        "<button class='mb-1 btn'><i class='fa fa-plus-circle'></i></button>" +
+                        "<button id='button" + doc.data().id + "' class='mb-1 btn'><i class='fa fa-plus-circle'></i></button>" +
                         "</div>" +
                         "</div>" +
                         "</div>"
                     )
+                    document.getElementById("button" + doc.data().id).onclick = function () {
+                        console.log("it works");
+                        $("#food").append(
+                            "<h5 class='mb-1'>" + doc.data().name + " $" + doc.data().price + "</h5>"
+                        )
+                    }
                 })
+            } else {
+                console.log("oops! Something is wrong");
             }
         })
     })
 })
+
+document.getElementById("cart").style.display = "none"
+document.getElementById("order").onclick = function () {
+    var x = document.getElementById("cart");
+    if (x.style.display === "none"){
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+document.getElementById("confirm").onclick = function (){
+    alert("Your order has been placed");
+}
