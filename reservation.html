@@ -11,7 +11,6 @@
 
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
-    <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
 </head>
 
@@ -41,60 +40,36 @@
             </ul>
         </div>
     </header>
-    <div id="search" class="verticalCenter">
-        <form id="searchform" method="GET">
-            <input class="form-control" id="searchinfo" type="text" placeholder="Search">
-            <button onclick= "search()" type="submit" value="submit" class="btn mb-2" id="searchRestaurants"><img src="images/search-icon.png"
-                alt="search icon"></button>
-        </form>
-    </div>
     <div id="content" class="verticalCenter">
-        <div id="foodCusine" class="verticalCenter">
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Chinese</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Italian</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Vietnamese</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Korean</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Thailand</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Janpanese</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Taiwanese</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="list-group mt-15 list" id="list-restaurant">            
+        <div id="myForm">
+            <form>
+                <fieldset name="reservationForm">
+                    <legend>Reservation Form</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPhoneNumber">Phone number</label>
+                            <input type="text" class="form-control" id="inputPhoneNumber" placeholder="phone number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputNumberPeople">Number of people</label>
+                            <input type="number" class="form-control" id="inputNumberPeople" max="6" min="1">
+                            <small id="numberHelp" class="form-text text-muted">Because of COVID-19, the maximum number
+                                of people in a table is 6.</small>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputDate">Date and time</label>
+                            <input type="datetime-local" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
         </div>
     </div>
     <div id="bottomBtn" class="justify-content-around">
@@ -135,7 +110,7 @@
     <script src="scripts/firebase_api.js"> </script>
 
     <!-- JS files: Your own JavaScript functions included here    -->
-    <script src="scripts/listRestaurant.js"> </script>
+    <script src="scripts/reservation.js"> </script>
 </body>
 
 </html>

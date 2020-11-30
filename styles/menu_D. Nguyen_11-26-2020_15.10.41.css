@@ -1,6 +1,7 @@
+
 .image {
     max-width: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .featurelist {
@@ -9,7 +10,7 @@
     overflow: auto;
     white-space: nowrap;
     width: 85%;
-
+    
 }
 
 
@@ -21,32 +22,18 @@
     width: auto;
 }
 
-.menuImg {
-    width: 50px;
-    height: 50px;
+.menuImg{
+    width: 80px; 
+    height: 80px;
+    float: right;
 }
 
-.menu {
-    width: 100%;
-    margin: auto;
+.menu{
+    max-width: 70%;
+    float: left;
 }
 
-.menu img {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-}
-
-.menu .btn {
-    background-color: #d9534f;
-    border: none;
-    color: white;
-    position: absolute;
-    right: 0;
-    font-size: 23px;
-}
-
-.addIcon {
+.addIcon{
     width: 30px;
     height: 30px;
     float: right;

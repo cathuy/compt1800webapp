@@ -9,6 +9,7 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    margin-bottom: 20px;
 }
 .bigger_screen{
     display: block;
@@ -16,12 +17,14 @@
 .card{
     width: 12vw;
 }
+#myForm{
+    margin-top: 20px;
+}
 @media only screen and (max-width: 650px) {
     *{
         font-size: 80%;
     }
     #bottomBtn{
-        position: sticky;
         bottom: 0;
         visibility: visible;
         display: flex;

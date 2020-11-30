@@ -32,8 +32,11 @@ function status() {
         document.getElementById("estimateOrder").innerText = q.data().estimateTime;
         var protocol = q.data().protocol;
         var i;
-        for (i = 0; i < protocol.length; i++)
+        for (i = 0; i < protocol.length; i++){
             $("#protocol").append("<li>" + protocol[i] + "</li>");
+        }
+        document.getElementById("lastUpdate").innerText = Date(q.data().time);
+            
 
     })
     var btnback = "<button type='button' class='btn' onclick='window.location.href= &#39;restaurantPage.html?" + id +"&#39;' value='link'>"

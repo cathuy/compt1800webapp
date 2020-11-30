@@ -33,18 +33,19 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.html">login/signup</a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
                 </li>
             </ul>
         </div>
-        
+
     </header>
-    <form id = "findForm" action = "listRestaurant.html" method = "get">
-        <input class="form-control" id = "address" type="text" placeholder="Enter your address">
+    <form id="findForm" method="get">
+        <input class="form-control" id="address" type="text" placeholder="Enter your address">
         <img src="images/Location-Icon.png" alt="location icon">
-        <button type="submit" value = "submit" class="btn btn-primary mb-2" id = "findRestaurant">Find the restaurant near by</button>
+        <button onclick="searchForm()" type="submit" value="submit" class="btn btn-primary mb-2" id="findRestaurant">Find the restaurant near
+            by</button>
     </form>
 
 
@@ -54,17 +55,16 @@
     <!----------------------------------------------->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+        </script>
 
-    <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
-    <!--------------------------------------------------------------------->
-
+    <script src="scripts/index.js"> </script>
 </body>
+
 </html>
