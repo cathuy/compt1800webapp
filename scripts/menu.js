@@ -21,7 +21,7 @@ $(document).ready(function menu() {
                     $("#menu").append(
                         "<div class='list-group-item flex-column align-items-start'>" +
                         "<div class='d-flex w-100'>" +
-                        "<img src = 'images/" + image + "' alt = 'restaurant picture'/>" +
+                        "<img class='menuImg' src = 'images/" + image + "' alt = 'restaurant picture'/>" +
                         "<div>" +
                         "<h5 class='mb-1'>" + name + "</h5>" +
                         "<p class='mb-1'>" + ingredients + "</p>" +
