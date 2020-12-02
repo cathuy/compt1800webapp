@@ -29,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a id = "profile" class="nav-link" href="#">my profile</a>
+                    <a id="profile" class="nav-link" href="#">my profile</a>
                 </li>
                 <li class="nav-item">
-                    <a id = "login" class="nav-link" href="login.html">login/signup</a>
+                    <a id="login" class="nav-link" href="login.html">login/signup</a>
                 </li>
                 <li class="nav-item">
-                    <a id = "about" class="nav-link" href="#">About us</a>
+                    <a id="about" class="nav-link" href="#">About us</a>
                 </li>
             </ul>
         </div>
@@ -43,57 +43,77 @@
     <div id="search" class="verticalCenter">
         <form id="searchform" method="GET">
             <input class="form-control" id="searchinfo" type="text" placeholder="Search">
-            <button onclick= "search()" type="submit" value="submit" class="btn mb-2" id="searchRestaurants"><img src="images/search-icon.png"
-                alt="search icon"></button>
+            <button onclick="search()" type="submit" value="submit" class="btn mb-2" id="searchRestaurants"><img
+                    src="images/search-icon.png" alt="search icon"></button>
         </form>
     </div>
     <div id="content" class="verticalCenter">
-        <div id="foodCusine" class="verticalCenter">
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Chinese</p>
+        <div id="account_info" >
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Amy">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="number" class="form-control" id="phoneNumber"
+                            placeholder=" 123123123">
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Italian</p>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" value="">
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Vietnamese</p>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="streetNumber">Street Number</label>
+                        <input type="text" class="form-control" id="streetNumber" placeholder="1234">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="streetName">Street Name</label>
+                        <input type="text" class="form-control" id="streetName"
+                            placeholder=" Main St">
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Korean</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Thailand</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Janpanese</p>
-                </div>
-            </div>
-            <div class="card bigger_screen">
-                <img class="card-img-top" src="images/Bread-PNG-7.png" alt="Card image cap">
-                <div class="card-body">
-                    <p class="card-text">Taiwanese</p>
-                </div>
-            </div>
-        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="form-group col-md-1">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option>AB</option>
+                            <option>BC</option>
+                            <option>MB</option>
+                            <option>NB</option>
+                            <option>NL</option>
+                            <option>NS</option>
+                            <option>NT</option>
+                            <option>NU</option>
+                            <option>ON</option>
+                            <option>PE</option>
+                            <option>QC</option>
+                            <option>SK</option>
+                            <option>YT</option>
+                        </select>
 
-        <div class="list-group mt-15 list" id="list-restaurant">            
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                
+                <button id="btnUpdate" type="submit" class="btn btn-primary">Update</button>
+            </form>
         </div>
     </div>
     <div id="bottomBtn" class="justify-content-around">
@@ -106,7 +126,7 @@
         <button type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/ordonance-512.png" alt="order history" />
             Orders</button>
-        <button id = "account" type="button" class="btn" onclick="window.location.href='#'" value="link">
+        <button id="account" type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
     </div>

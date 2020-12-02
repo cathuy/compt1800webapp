@@ -4,14 +4,13 @@ $(document).ready(function menu() {
     var queries = queryString.split("?"); //delimiter
     var id = queries[1]; //get what's after '?'
     console.log(id);
-    var restaurantID, foodID, ingredients, image, name, price;
+
     db.collection("dishes").get().then(function (q) {
         q.forEach(function (doc) {
 
             restaurantID = doc.data().restaurantID.id;
             foodID = doc.data().id;
-            console.log(restaurantID)
-            //console.log(foodID);
+            console.log(foodID);
 
             if (restaurantID == id) {
                 db.collection("dishes").doc(foodID).onSnapshot(function (q) {
@@ -34,7 +33,10 @@ $(document).ready(function menu() {
                         "</div>" +
                         "</div>"
                     )
-                    document.getElementById("button" + doc.data().id).onclick = function () {
+                    console.log(doc.data().id);
+                    var button = document.getElementById("button" + doc.data().id);
+                    console.log(button);
+                    button.onclick = function() {
                         console.log("it works");
                         $("#food").append(
                             "<h5 class='mb-1'>" + doc.data().name + " $" + doc.data().price + "</h5>"
@@ -42,7 +44,7 @@ $(document).ready(function menu() {
                     }
                 })
             } else {
-                console.log("this dish is not belong to this restaurant");
+                console.log("oops! Something is wrong");
             }
         })
     })

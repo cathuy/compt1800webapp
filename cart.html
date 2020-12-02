@@ -14,7 +14,7 @@
     <!-- Optional styles and scripts of your own -->
     <link rel="stylesheet" href="styles/index_style.css">
     <link rel="stylesheet" href="styles/mobilestyle.css">
-    <link rel="stylesheet" href="styles/restaurantList.css">
+    <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/cart.css">
 </head>
@@ -33,14 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">my profile</a>
+                    <a id = "profile" class="nav-link" href="#">my profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">login/signup</a>
+                    <a id = "login" class="nav-link" href="login.html">login/signup</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
+                    <a id = "about" class="nav-link" href="#">About us</a>
                 </li>
             </ul>
         </div>
@@ -64,7 +63,7 @@
         <button type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/ordonance-512.png" alt="order history" />
             Orders</button>
-        <button type="button" class="btn" onclick="window.location.href='#'" value="link">
+        <button id = "account" type="button" class="btn" onclick="window.location.href='#'" value="link">
             <img src="images/Person-Logo-1.png" alt="Account" />
             Account</button>
     </footer>
@@ -93,7 +92,8 @@
 
     <!-- JS files: Your own JavaScript functions included here    -->
     <script src="scripts/menu.js"> </script>
-
+    <script src="scripts/logout.js"> </script>
+    <script src ="scripts/account.js"></script>
 </body>
 
 </html>
