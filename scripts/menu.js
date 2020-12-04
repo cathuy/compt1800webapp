@@ -48,6 +48,10 @@ $(document).ready(function menu() {
             }
         })
     })
+    var btnback = "<button type='button' class='btn' onclick='window.location.href= &#39;restaurantPage.html?" + id +"&#39;' value='link'>"
+    +"<img src='images/Left_Arrow_-512.png' alt='go back' />"
+    +"Back</button>"
+    $("#bottomBtn").prepend(btnback);
 })
 
 document.getElementById("cart").style.display = "none"
