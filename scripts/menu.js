@@ -24,7 +24,7 @@ $(document).ready(function menu() {
                         "<img class='menuImg' src = 'images/" + image + "' alt = 'restaurant picture'/>" +
                         "<div>" +
                         "<h5 class='mb-1'>" + name + "</h5>" +
-                        "<p class='mb-1'>" + ingredients + "</p>" +
+                        "<p>" + ingredients + "</p>" +
                         "<h6 class='mb-1'>$" + price + "</h6>" +
                         "</div>" +
                         "<div>" +
